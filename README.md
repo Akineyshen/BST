@@ -1,2 +1,7 @@
-# BST
-This Java program implements a binary search tree (BST) to perform insertions, deletions, searches, and count values with specific integer parts from a file.
+# Tree BST
+This Java program provides a comprehensive demonstration of managing a Binary Search Tree (BST). The BST supports operations like insertion, deletion, search, and counting nodes with specific integer parts. The implementation is encapsulated within two classes: `Tree` for the nodes of the tree and `BST` for the binary search tree's operations.
+
+* The `Tree` class represents a node in the BST, containing a `value` and pointers to its left and right children.
+* The `BST` class handles the main operations. The `paste` method inserts a new value into the BST, maintaining its order. The `remove` method deletes a specified value, adjusting the tree structure to preserve the BST properties. The `searh` (sic) method checks for the presence of a value, returning a boolean result. The `countValue` method counts the nodes whose values have a specific integer part. Finally, the `viewTree` method visually represents the tree structure, aiding in understanding the tree's current state.
+
+The `Main` class reads operations from a file named "in.txt", where each operation (insertion, deletion, search, and count) is specified with a character code followed by the relevant value. The operations are processed in order, and the program outputs the results of searches and counts directly to the console. The program also prints the final structure of the BST, providing a clear and visual representation of the tree's layout after all operations have been performed.
